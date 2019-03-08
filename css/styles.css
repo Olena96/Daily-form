@@ -1,0 +1,146 @@
+:root {
+
+	--grey: #7a7b7f;
+	--pink: #e12a6c;
+
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+	box-sizing: border-box;
+	transition: all .2s ease-in-out;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+html { 
+height: 100%; }
+
+body, html {
+	min-height: 100%;
+	width: 100%;
+}
+
+.clear::after, .clear::before {
+	content: " ";
+	display: table;
+}
+
+.clear::after {
+	clear: both;
+}
+
+/* Main Styles */
+
+body { 
+	display: flex;
+	align-items: center;
+	font-family: 'Arial', sans-serif;
+	background: #ff512f; /* Old browsers */
+background: -moz-linear-gradient(45deg, #ff512f 0%, #dd2476 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(45deg, #ff512f 0%,#dd2476 100%);  Chrome10-25,Safari5.1-6 
+background: linear-gradient(45deg, #ff512f 0%,#dd2476 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff512f', endColorstr='#dd2476',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+ }
+ .container { 
+ margin: 0 auto;
+ max-width: 500px;
+ width: 100%;
+ padding: 0 20px;
+
+ }
+
+ .login { 
+ padding: 30px 30px 60px;
+ background: #fff;
+ border-radius: 4px; }
+
+ .header {
+ 	margin-bottom: 35px;
+
+ }
+
+ .header__top { 
+ display: flex;
+margin-bottom: 15px;}
+
+ .header__img { 
+ 	width: 24px;
+ 	height: 24px;
+ 	margin-right: 10px;
+
+  }
+
+
+ .header__title {
+ 	font-weight: 700;
+ 	font-size: 24px;
+  }
+
+ .header__desc {
+ 	font-size: 13px;
+     color:var(--grey);  
+   }
+
+   .link {
+   color: var(--pink);
+   text-decoration: none;  }
+
+ .field { 
+ 	display: flex;
+ 	justify-content: space-between;
+
+    }
+
+ .item {
+ background: #f0f0f0;
+ border-radius: 4px;
+ padding: 14px 0 14px 12px;
+ width: 100%;
+ margin-bottom: 15px;
+    } 
+
+    .item--small { 
+    width: 48%; }
+
+ .button {
+ width: 100%;
+ background: #ea355a;
+ padding: 17px 20px;
+ border-radius: 4px;
+ color: #fff;
+ font-weight: 700;
+ font-size: 18px;
+ margin-bottom: 24px;
+ box-shadow: 0 5px  #bd1962;
+ /*border-bottom: 6px solid #bd1962;*/
+ cursor: pointer;
+ position: relative;
+  /*display: inline-block;*/
+ /*position: relative;*/
+  }
+
+
+.button:hover { 
+background: #fb2b56;
+
+}
+
+.button:active { 
+	top:2px;
+box-shadow: 0 1px 0 1px #bd1962 inset;
+/*transform: trasnslateY(3px);*/
+/*border-bottom: 3px solid #bd1962;*/
+ }
+
+ .footer { 
+ 	font-size: 12px;
+ 	color: var(--grey);
+
+  }
